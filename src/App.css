@@ -1,0 +1,226 @@
+@import url('https://cdn.syncfusion.com/ej2/material.css');
+
+.sidebar {
+  box-shadow: rgb(113 122 131 / 11%) 0px 7px 30px 0px;
+}
+.nav-item,
+.navbar {
+  z-index: 10000;
+}
+@media  screen and (max-width:800px) {
+  .sidebar{
+    z-index: 10000000;
+  }
+}
+
+.e-dlg-center-center, .e-quick-popup-wrapper.e-device{
+  z-index: 1000000 !important;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(216, 216, 216);
+  border-radius: 40px;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* color-picker style  */
+
+ #preview {
+  background: transparent
+    url('https://ej2.syncfusion.com/react/demos/src/color-picker/images/pen.png')
+    no-repeat;
+  display: inline-block;
+  height: 80px;
+  margin: 10px 0;
+  min-width: 300px;
+  max-width: 600px;
+  background-color: #008000;
+}
+
+.e-input-group:not(.e-float-icon-left), .e-input-group.e-success:not(.e-float-icon-left), .e-input-group.e-warning:not(.e-float-icon-left), .e-input-group.e-error:not(.e-float-icon-left), .e-input-group.e-control-wrapper:not(.e-float-icon-left), .e-input-group.e-control-wrapper.e-success:not(.e-float-icon-left), .e-input-group.e-control-wrapper.e-warning:not(.e-float-icon-left), .e-input-group.e-control-wrapper.e-error:not(.e-float-icon-left){
+  border: none;
+}
+
+@media only screen and (max-width:499px) {
+  .Header{
+    margin-top: 60px;
+  }
+}
+
+
+.cart_img{
+  width: 27%;
+}
+
+/* chart  */
+@media only screen  and (max-width:1024px) {
+  .bigDiv div div > p{
+    font-size: 1.1rem ;
+  }
+  .cart_img{
+    width: 30% !important;
+  }
+}
+@media only screen  and (max-width:768px) {
+  .cart_img{
+    width: 33% !important;
+    margin-right: 40px;
+  }
+}
+
+@media only screen and (max-width:499px) {
+  
+  .bigDiv  p{
+    font-size: .7rem !important;
+    overflow-y: scroll;
+  }
+  .cart_img{
+    width: 30% !important;
+    margin: auto;
+  }
+  .small{
+    padding-bottom: 8px;
+    flex-direction: column;
+    justify-content: center !important;
+    text-align: center;
+  }
+  .small .item_name{
+    margin-top: 6px;
+  }
+  .small p{
+    font-size: .8rem !important;
+  }
+  .main{
+    padding: 10px;
+  }
+  .btns{
+    justify-content: center;
+  }
+}
+
+/* chat  */
+.mainChat{
+  padding: 20px;
+  position: fixed;
+  top: 8%;
+  right: 16%;
+  z-index: 99999;
+  width: 25%;
+  border-radius: 5px;
+}
+.mainChat .chatHeader{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mainChat .chatBody{
+  margin-top: 30px;
+}
+.mainChat .chatBody img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.mainChat .chatSingle{
+  padding: 10px 0px;
+  border-bottom: 1px solid rgb(213, 210, 210);
+}
+.mainChat .chatDesc{
+  margin-top: 10px;
+}
+.chatBody button{
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  margin-top: 15px;
+  border-radius: 5px;
+}
+.mainChat.mainNoti{
+  right: 13%;
+}
+
+@media only screen  and (max-width:1024px) {
+  .mainChat{
+    width: 50%;
+    top: 7%;
+    right: 23%;
+  }
+  .themeMain{
+    width: 35%;
+  }
+}
+@media only screen  and (max-width:768px) {
+  .mainChat{
+    width:58%;
+  }
+  .themeMain{
+    width: 50%;
+  }
+  .EcommMain{
+    width: 60%;
+    text-align: center;
+    display: grid !important;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+  }
+  .EcommRev{
+    margin: auto !important;
+  }
+}
+@media only screen  and (max-width:499px) {
+  .mainChat{
+    top: 9%;
+    width:90%;
+    right: 5%;
+  }
+  .chatBody{
+    margin-top: 5px !important;
+  }
+  .themeMain{
+    width: 100%;
+  }
+  /* Ecommerce editions  */
+  .EcommMain{
+    width: 90%;
+    text-align: center;
+    display: grid !important;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-between;
+    gap: 10px;
+  }
+}
+/* user profile  */
+.profileData{
+  border-bottom: 1px solid rgb(213, 210, 210);
+  padding-bottom: 20px;
+}
+.profileData img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.userDisc{
+  margin-top: 0 !important;
+}
+.mainChat.mainUser{
+  right: 3%;
+}
+.chatBody.userBody{
+  margin-top: 10px !important;
+}
+@media only screen  and (max-width:499px) {
+  .mainChat.mainUser{
+    width: 90%;
+    right: 5%;
+  }
+  .mainChat.mainNoti{
+    right: 5%;
+  }
+}
